@@ -1,0 +1,131 @@
+body {
+    background-color: #EAE8FF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, ul, h1 {
+    margin: 0;
+}
+
+/* Header navbar stuff */
+#navbar {
+    background-color: #545E75;
+    padding: 2rem;
+    position: fixed;
+    width: 100%;
+}
+
+#header-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 3rem;
+}
+
+.link {
+    font-size: 1.25em;
+    text-decoration: none;
+    color: #F8F8F8;
+}
+
+/* Welcome Section */
+#welcome-section {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("https://images.pexels.com/photos/3551214/pexels-photo-3551214.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F8F8F8;
+    gap: 2rem;
+    height: 100vh;
+}
+
+#welcome-heading-div {
+    text-align: center;
+}
+
+#welcome-heading {
+    font-size: 3em;
+}
+
+#about-info-div {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Projects Section */
+#projects {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 3rem;
+}
+
+#projects-heading-div {
+    text-align: center;
+}
+
+#projects-heading {
+    font-size: 2em;
+}
+
+.project-tile {
+    width: 100%;
+    height: auto;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 45em) {
+    #projects {
+        display: grid;
+        grid-template-areas: "h h"
+                             "p1 p2"
+                             "p3 p4";
+    }
+
+    #projects-heading-div {
+        grid-area: h;
+    }
+
+    #tribute {
+        grid-area: p1;
+    }
+
+    #survey {
+        grid-area: p2;
+    }
+
+    #product {
+        grid-area: p3;
+    }
+
+    #docs {
+        grid-area: p4;
+    }
+}
+
+/* Contact Info */
+#contact {
+    background-color: #5B5475;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+
+#contact-heading {
+    color: #F8F8F8;
+    font-size: 2em;
+}
+
+#profile-link {
+    color: #F8F8F8;
+    text-decoration: none;
+    font-size: 1.25em;
+}
